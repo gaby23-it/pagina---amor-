@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para Ti ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div id="portada">
+
+<h1 id="titulo"></h1>
+<h2 id="submensaje"></h2>
+
+<p id="mensajeIntro" class="oculto-intro">
+Tienes una carta para abrir 💌
+</p>
+
+<div id="sobre" class="oculto-intro" onclick="abrirCarta()">
+<div class="tapa"></div>
+<div class="cuerpo"></div>
+<div class="carta-interna">💌</div>
+</div>
+
+</div>
+
+<div id="contenido" class="oculto">
+
+<div class="carta">
+<h2>Mi amor</h2>
+<p id="mensaje">Mi amor ❤️</p>
+</div>
+
+<button onclick="editarMensaje()" class="sorpresa-btn">
+✏️ Editar mensaje
+</button>
+
+<button class="sorpresa-btn" onclick="toggleFotos()">📸 Fotos</button>
+<button class="sorpresa-btn" onclick="togglePoemas()">✍️ Poemas</button>
+<button class="sorpresa-btn" onclick="toggleRazones()">❤️ 100 Razones</button>
+
+<!-- FOTOS -->
+<div id="seccionFotos" class="oculto">
+<div class="foto-card-mini">
+<img src="fotos/foto1.jpeg">
+<p>Nuestra primera foto ❤️</p>
+</div>
+
+<div class="foto-card-mini">
+<img src="fotos/foto2.jpeg">
+<p>Algo bonito para nosotros ❤️</p>
+</div>
+</div>
+
+<!-- POEMAS -->
+<div id="seccionPoemas" class="oculto">
+<div class="poema-card">
+<p>En tu sonrisa encontré calma.</p>
+</div>
+</div>
+
+<!-- RAZONES -->
+<div id="seccionRazones" class="oculto mensaje-final">
+<h2>Te amo ❤️</h2>
+<ul>
+<li>Porque me haces feliz</li>
+<li>Porque eres especial</li>
+<li>Porque eres tú</li>
+</ul>
+</div>
+
+<audio id="musica" autoplay loop>
+<source src="musica/cancion.mp3">
+</audio>
+
+</div>
+
+<!-- CONTADOR -->
+<div id="contadorLive">
+💖 Llevamos juntos:
+<br>
+<span id="tiempoJuntos"></span>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
